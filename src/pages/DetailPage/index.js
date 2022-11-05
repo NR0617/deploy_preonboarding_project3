@@ -25,7 +25,7 @@ const DetailPage = () => {
       }
       setIsLoading(false);
     });
-  }, []);
+  }, [id]);
   return (
     <>
       <PageHeader>차량상세</PageHeader>
