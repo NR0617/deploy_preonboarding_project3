@@ -47,7 +47,7 @@ const DetailPage = () => {
                         id={el.id}
                         attribute={el.attribute}
                         startDate={el.startDate}
-                        amount={el.amount}
+                        amount={el.amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
                         insurance={el.insurance}
                         additionalProducts={el.additionalProducts}
                       />
