@@ -28,7 +28,7 @@ const DetailPage = () => {
   }, [id]);
   return (
     <>
-      <PageHeader>차량상세</PageHeader>
+      <PageHeader name="detail">차량상세</PageHeader>
 
       {isLoading ? (
         <Loading />

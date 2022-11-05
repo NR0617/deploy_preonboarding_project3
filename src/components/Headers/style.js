@@ -1,14 +1,19 @@
 import styled from 'styled-components';
-export const HeaderContainer = styled.span`
+export const HeaderContainer = styled.div`
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+`;
+export const Header = styled.span`
   width: 100vw;
   height: 8vh;
   border-bottom: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
-  //position: fixed;
   font-size: 1rem;
 `;
+
 export const AttributeBtnContainer = styled.div`
   width: 100vw;
   height: fit-content;

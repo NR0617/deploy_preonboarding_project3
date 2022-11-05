@@ -24,28 +24,28 @@ const DetailInfo = ({ id, attribute, startDate, amount, insurance, additionalPro
         <Styled.CarPrice>월{amount}원</Styled.CarPrice>
         <Styled.CarinfoTitle>차량정보</Styled.CarinfoTitle>
         <Styled.MakeSpace>
-          <Styled.CarInfoContent style={{ 'font-weight': 'bolder' }}>차종</Styled.CarInfoContent>
+          <Styled.CarInfoContent style={{ fontWeight: 'bolder' }}>차종</Styled.CarInfoContent>
           <Styled.CarInfoContent>{Attribute.segment[attribute.segment]}</Styled.CarInfoContent>
         </Styled.MakeSpace>
         <Styled.MakeSpace>
-          <Styled.CarInfoContent style={{ 'font-weight': 'bolder' }}>연료</Styled.CarInfoContent>
+          <Styled.CarInfoContent style={{ fontWeight: 'bolder' }}>연료</Styled.CarInfoContent>
           <Styled.CarInfoContent>{Attribute.fuelType[attribute.fuelType]}</Styled.CarInfoContent>
         </Styled.MakeSpace>
         <Styled.MakeSpace>
-          <Styled.CarInfoContent style={{ 'font-weight': 'bolder' }}>
+          <Styled.CarInfoContent style={{ fontWeight: 'bolder' }}>
             이용 가능일
           </Styled.CarInfoContent>
           <Styled.CarInfoContent>{dateFormat1} 부터</Styled.CarInfoContent>
         </Styled.MakeSpace>
         <Styled.CarinfoTitle>보험</Styled.CarinfoTitle>
         <Styled.MakeSpace>
-          <Styled.CarInfoContent style={{ 'font-weight': 'bolder' }}>
+          <Styled.CarInfoContent style={{ fontWeight: 'bolder' }}>
             {insurance[0].name}
           </Styled.CarInfoContent>
           <Styled.CarInfoContent>{insurance[0].description}</Styled.CarInfoContent>
         </Styled.MakeSpace>
         <Styled.MakeSpace>
-          <Styled.CarInfoContent style={{ 'font-weight': 'bolder' }}>
+          <Styled.CarInfoContent style={{ fontWeight: 'bolder' }}>
             {insurance[1].name}
           </Styled.CarInfoContent>
           <Styled.CarInfoContent>{insurance[1].description}</Styled.CarInfoContent>

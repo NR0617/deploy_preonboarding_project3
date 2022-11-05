@@ -1,10 +1,14 @@
 import axios from 'axios';
 
 export const getCarsData = async (condition = null) => {
-  let query = '';
-  if (condition) {
-    query = `?${condition}`;
+  try {
+    let query = '';
+    if (condition) {
+      query = `?${condition}`;
+    }
+    const { data } = await axios.get(`/api/cars${query}`);
+    return data.payload;
+  } catch (e) {
+    console.log(e.message);
   }
-  const { data } = await axios.get(`/api/cars${query}`);
-  return data.payload;
 };
