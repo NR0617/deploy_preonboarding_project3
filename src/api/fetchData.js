@@ -8,7 +8,7 @@ export const getCarsData = async (condition = null) => {
     }
     const { data } = await axios.get(`/api/cars${query}`);
     return data.payload;
-  } catch (e) {
-    console.log(e.message);
+  } catch (error) {
+    console.log(error.message);
   }
 };

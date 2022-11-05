@@ -45,9 +45,9 @@ const MainPage = () => {
                     return (
                       <CarListItem
                         key={idx}
-                        id={el.id}
-                        attribute={el.attribute}
-                        amount={el.amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+                        id={el?.id}
+                        attribute={el?.attribute}
+                        amount={el?.amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
                       />
                     );
                   })}
