@@ -48,5 +48,6 @@
     "prettier": "^2.7.1",
     "react-router-dom": "^6.4.3",
     "styled-components": "^5.3.6"
-  }
+  },
+  "proxy": "https://preonboarding.platdev.net"
 }
