@@ -1,3 +1,6 @@
+## <a href="https://github.com/NR0617/deploy_preonboarding_project3/wiki/%EC%8B%A4%EC%A0%9C-%ED%99%94%EB%A9%B4">어플리케이션_보기</a>
+
+
 ## commit msg 규칙
 
 ### 1. 커밋 유형 지정하기
