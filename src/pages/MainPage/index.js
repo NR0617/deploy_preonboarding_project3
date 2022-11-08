@@ -26,7 +26,9 @@ const MainPage = () => {
       setIsLoading(false);
     });
   }, [checkedQuery]);
-
+  if (!hasNoData === false) {
+    return <NoData />;
+  }
   return (
     <>
       <PageHeader>전체차량</PageHeader>
@@ -35,24 +37,18 @@ const MainPage = () => {
         <Loading />
       ) : (
         <>
-          {hasNoData ? (
-            <NoData />
-          ) : (
+          {!!carListItems && (
             <>
-              {!!carListItems && (
-                <>
-                  {carListItems?.map((el, idx) => {
-                    return (
-                      <CarListItem
-                        key={idx}
-                        id={el?.id}
-                        attribute={el?.attribute}
-                        amount={el?.amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
-                      />
-                    );
-                  })}
-                </>
-              )}
+              {carListItems?.map((el, idx) => {
+                return (
+                  <CarListItem
+                    key={idx}
+                    id={el?.id}
+                    attribute={el?.attribute}
+                    amount={el?.amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+                  />
+                );
+              })}
             </>
           )}
         </>
