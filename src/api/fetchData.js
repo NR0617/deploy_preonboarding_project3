@@ -1,4 +1,5 @@
-import axios from 'axios';
+//import axios from 'axios';
+import axiosInstance from './axiosInstance';
 
 export const getCarsData = async (condition = null) => {
   try {
@@ -6,7 +7,7 @@ export const getCarsData = async (condition = null) => {
     if (condition) {
       query = `?${condition}`;
     }
-    const { data } = await axios.get(`/api/cars${query}`);
+    const { data } = await axiosInstance.get(`/api/cars${query}`);
     return data.payload;
   } catch (error) {
     console.log(error);
