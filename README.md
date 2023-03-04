@@ -16,7 +16,7 @@
 
 ## **🛠 Dev Tools**
 
-![badge](https://img.shields.io/badge/React-61dafb?logo=React&logoColor=white&style=flat-square) ![badge](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=white&style=flat-square)
+![badge](https://img.shields.io/badge/javascript-F7DF1E?logo=javascript&logoColor=white&style=flat-square) ![badge](https://img.shields.io/badge/React-61dafb?logo=React&logoColor=white&style=flat-square) ![badge](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=white&style=flat-square) ![badge](https://img.shields.io/badge/styledcomponents-DB7093?logo=styledcomponents&logoColor=white&style=flat-square) 
 
 ## **🖥 프로젝트 실행 방법**
 
